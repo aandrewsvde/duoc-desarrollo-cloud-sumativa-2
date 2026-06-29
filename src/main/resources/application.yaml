@@ -13,3 +13,8 @@ aws:
 spring:
   application:
     name: api-guias
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${AZURE_AD_JWK_SET_URI}
